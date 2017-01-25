@@ -53,7 +53,7 @@ let api = function(req, res, next) {
 
 	// set response type to json rather than text or html
 	res.writeHead(200, { "Content-Type": "application/json"});
-	res.toJSON(person);
+	res.end(person);
 };
 
 // map the url's to the correct virtual pages
